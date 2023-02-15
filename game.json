@@ -1345,7 +1345,7 @@
               },
               "parameters": [
                 "PlayerA",
-                "-(PlayerA.Angle()+270)",
+                "PlayerA.Angle()+90",
                 "200",
                 ""
               ]
@@ -1487,7 +1487,7 @@
               },
               "parameters": [
                 "PlayerB",
-                "-(PlayerB.Angle()+270)",
+                "PlayerB.Angle()+90",
                 "200",
                 ""
               ]
