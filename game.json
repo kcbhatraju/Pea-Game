@@ -75,7 +75,7 @@
         "alwaysLoaded": false,
         "file": "player_A.png",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"player_A.png\",\"extension\":\".png\"}",
         "name": "player_A.png",
         "smoothed": false,
         "userAdded": true
@@ -478,8 +478,8 @@
           "layer": "Controls Pop-up",
           "name": "ContinueButton",
           "persistentUuid": "9ec62e20-6213-4dd4-baab-094e24493a67",
-          "width": 288,
-          "x": 480,
+          "width": 384,
+          "x": 448,
           "y": 539,
           "zOrder": 101,
           "numberProperties": [],
@@ -1233,7 +1233,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "CONTROLS\n\nPlayer 1: Use W, A, S, D to move and turn. Use C to shoot.\n\nPlayer 2: Use arrow keys to move and turn. Use the front slash key to shoot.\n\nFirst to 5 wins. Good luck.",
+          "string": "CONTROLS\n\nPlayer 1: Use W, A, S, D to move and turn. Use the C or the tilde keys to shoot.\n\nPlayer 2: Use arrow keys to move and turn. Use the frontslash or backslash keys to shoot.\n\nFirst to 5 wins. Good luck.",
           "font": "",
           "textAlignment": "center",
           "characterSize": 40,
@@ -1682,11 +1682,28 @@
           "conditions": [
             {
               "type": {
-                "value": "KeyFromTextPressed"
+                "value": "BuiltinCommonInstructions::Or"
               },
-              "parameters": [
-                "",
-                "\"c\""
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"c\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Tilde"
+                  ]
+                }
               ]
             },
             {
@@ -1702,18 +1719,18 @@
             },
             {
               "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            },
-            {
-              "type": {
                 "value": "LayerVisible"
               },
               "parameters": [
                 "",
                 "\"\""
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [
@@ -1778,11 +1795,28 @@
           "conditions": [
             {
               "type": {
-                "value": "KeyPressed"
+                "value": "BuiltinCommonInstructions::Or"
               },
-              "parameters": [
-                "",
-                "Slash"
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Slash"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "BackSlash"
+                  ]
+                }
               ]
             },
             {
@@ -1798,18 +1832,18 @@
             },
             {
               "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
-            },
-            {
-              "type": {
                 "value": "LayerVisible"
               },
               "parameters": [
                 "",
                 "\"\""
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
             }
           ],
           "actions": [
