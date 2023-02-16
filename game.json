@@ -242,6 +242,33 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/05b0c1364a92b436b86ca819e66b63480d1bc2fb399f6c0cf8bffbf8199ccc2a_CantoraOne-Regular.ttf",
           "name": "CantoraOne-Regular.ttf"
         }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Main.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Main.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "pixil-frame-0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "pixil-frame-0.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "pixil-frame-0 (2).png",
+        "kind": "image",
+        "metadata": "",
+        "name": "pixil-frame-0 (2).png",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -270,7 +297,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.679140990977685,
+        "zoomFactor": 0.6503476410171115,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -590,7 +617,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "player_A.png",
+                      "image": "pixil-frame-0.png",
                       "points": [
                         {
                           "name": "Fire",
@@ -612,20 +639,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 6.031798362731934,
-                            "y": 8.727521896362305
+                            "x": 6.76953125,
+                            "y": 8.875
                           },
                           {
-                            "x": 26.072093963623047,
-                            "y": 8.863487243652344
+                            "x": 24.20703125,
+                            "y": 8.8125
                           },
                           {
-                            "x": 26.20751190185547,
-                            "y": 31.952577590942383
+                            "x": 24.33203125,
+                            "y": 31.75
                           },
                           {
-                            "x": 5.76288366317749,
-                            "y": 31.773025512695312
+                            "x": 6.51953125,
+                            "y": 31.9375
                           }
                         ]
                       ]
@@ -723,7 +750,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "pixel_B.png",
+                      "image": "pixil-frame-0 (2).png",
                       "points": [
                         {
                           "name": "Fire",
@@ -745,20 +772,20 @@
                       "customCollisionMask": [
                         [
                           {
-                            "x": 5.823739051818848,
-                            "y": 9.069901466369629
+                            "x": 7.76953125,
+                            "y": 9.125
                           },
                           {
-                            "x": 26.265899658203125,
-                            "y": 8.929001808166504
+                            "x": 25.20703125,
+                            "y": 9.1875
                           },
                           {
-                            "x": 26.190515518188477,
-                            "y": 31.999725341796875
+                            "x": 25.26953125,
+                            "y": 31.8125
                           },
                           {
-                            "x": 5.6603617668151855,
-                            "y": 31.918312072753906
+                            "x": 7.51953125,
+                            "y": 31.8125
                           }
                         ]
                       ]
@@ -846,7 +873,7 @@
                   "sprites": [
                     {
                       "hasCustomCollisionMask": true,
-                      "image": "Main",
+                      "image": "Main.png",
                       "points": [],
                       "originPoint": {
                         "name": "origine",
@@ -1063,7 +1090,7 @@
             }
           ],
           "behaviors": [],
-          "string": "TANK GAME",
+          "string": "PEA GAME",
           "font": "Roboto-Regular.ttf",
           "textAlignment": "center",
           "characterSize": 200,
@@ -1233,7 +1260,7 @@
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "string": "CONTROLS\n\nPlayer 1: Use W, A, S, D to move and turn. Use the C or the tilde keys to shoot.\n\nPlayer 2: Use arrow keys to move and turn. Use the frontslash or backslash keys to shoot.\n\nFirst to 5 wins. Good luck.",
+          "string": "CONTROLS\n\nPlayer 1 (Blue): Use W, A, S, D to move and turn. Use the C or the tilde keys to shoot.\n\nPlayer 2 (Red): Use arrow keys to move and turn. Use the frontslash or backslash keys to shoot.\n\nFirst to 5 wins. Good luck.",
           "font": "",
           "textAlignment": "center",
           "characterSize": 40,
